@@ -4,9 +4,11 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #00112c;
+  margin: 0;
+  padding: 0;
 }
 nav {
-    margin: 0 auto;
+  margin: 0 auto;
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
@@ -31,102 +33,123 @@ nav {
   align-items: center;
   gap: 30px;
 }
-div{
-    text-align: left;
-    cursor: pointer;
+.nav_element {
+  cursor: pointer;
 }
-button, .contact{
-    font-size: 16px;
-    font-weight: 600;
-    background-color: #0abf53;
-    border-color: transparent;
-    line-height: 16px;
-    padding: 12px 24px;
-    margin: 12px 12px 12px 0px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all ease-in-out 0,2s;
+.contact {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #0abf53;
+  border-color: transparent;
+  line-height: 16px;
+  padding: 12px 24px;
+  margin: 12px 12px 12px 0px;
+  border: 1px solid #0abf53;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease-in-out 0, 2s;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
 }
-a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
+button:hover {
+  background-color: rgb(66, 143, 63);
 }
-button:hover{
-    background-color: rgb(66, 143, 63);
+.introduction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 80%;
+  padding-bottom: 30px;
+
+@media (max-width:800px) {
+    .introduction {flex-direction: column;
 }
-.introduction{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 30px;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    max-width: 80%;
-    padding-bottom: 30px;
 }
-.intro_text{
-color: #212529;
-text-align: left;
-max-width: 45%;
+.intext_link {
+  color: #0abf53;
 }
-.intro_video{
-    max-width: 45%;
-    align-self: center;
+.intext_link:hover {
+  text-decoration: none;
+  cursor: pointer;
 }
-.business{
-color: #212529;
-padding-bottom: 24px;
-height: fit-content;
-line-height: 26px;
+.intro_text {
+  color: #212529;
+  text-align: left;
+  max-width: 45%;
 }
-h1{
-    font-size: 45px;
+.intro_video {
+  max-width: 45%;
+  align-self: center;
 }
-.service_menu{
-    background-color: rgb(243, 246, 249);
-    width: 100%;
-    margin: -5px;
-    padding: 0px;
+.business {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 20px;
+  letter-spacing: -0, 015em;
+  line-height: 30px;
+  font-weight: 400;
+  color: #00112c;
+  font-family: "Fakt", sans-serif, Arial, Helvetica, sans-serif;
 }
-.service_offer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px; 
-    max-width: 80%;
-    margin: 0 auto;
+h1 {
+  font-size: 64px;
+  letter-spacing: -0, 015em;
+  line-height: 74px;
+  font-weight: 600;
+  color: #00112c;
+  font-family: "Fakt", sans-serif, Arial, Helvetica, sans-serif;
 }
-.grow_business, .connect, .discover, .fraud{
-    padding:15px;
+.service_menu {
+  background-color: rgb(243, 246, 249);
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 5px;
 }
-.service_description{
-    color: #212529;
-    text-align: left;
-    font-size: 18px;
-    font-weight:200;
-    line-height: 25px;
+.service_offer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 auto;
 }
-h2{
-    color: #212529;
-    font-size: 35px;
-    max-width: 900px;
-    text-align: left; 
-    font-weight: 600;
-    margin-left: 120px;
-    padding: 20px;
+.finance_offer {
+  padding-right: 14px;
+  padding-left: 14px;
+  position: relative;
+  max-width: 100%;
 }
-h3{
-    color: #212529;
-    font-size: 25px;
-    text-align: left; 
-    font-weight: 400;
+.service_description {
+  color: #212529;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
 }
-.icons{
-    width: 100px;
-    height: 70px;
-    text-align: left;
-    align-self: auto;
+h2 {
+  color: #212529;
+  font-size: 35px;
+  max-width: 900px;
+  text-align: left;
+  font-weight: 600;
+  margin-left: 120px;
+  padding: 20px;
+}
+h3 {
+  color: #212529;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 600;
+  line-height: 30px;
+}
+.icons {
+  width: 100px;
+  height: 70px;
+  text-align: left;
+  align-self: auto;
 }
